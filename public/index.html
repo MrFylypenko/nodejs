@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+
+        var sockets = [];
+
+        for(var i = 0; i < 10; i++){
+            var socket = io();
+            /*socket.on('message', function (data) {
+                document.write(data)
+            });
+            //socket.on('testerEvent', function(data){document.write(data.description)});
+            socket.emit('clientEvent', 'Sent an event from the client!');
+
+            socket.on('broadcast', function (data) {
+                document.body.innerHTML = '';
+                document.write(data.description);
+            });
+
+            socket.on('newclientconnect', function (data) {
+                document.body.innerHTML = '';
+                document.write(data.description);
+            });*/
+
+            sockets.push(socket);
+            console.log(i);
+        }
+
+
+
+
+
+    </script>
+
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+Hello world
+</body>
+</html>
